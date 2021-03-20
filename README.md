@@ -25,7 +25,7 @@ You can also use MSBuild which is an easier tool to build projects created in VS
 **Use**
 
 To use the application, you need 3 things:
- - Your API key and secret key that are provided by Binance when you create an API key (Account > API settings menu).
+ - Your API key and secret key that are provided by Binance when you create an API key (Account > Settings > API Management menu).
  - The tracked assets (coins and fiats) that you want to rebalance with the tool and their desired distribution (in percentage).
  - The primary and secondary assets that the tool will use to buy and sell, ie. if your primary asset is EUR and your secondary asset is BTC, the tool will try to buy for BTC and sell for Euro (if those are not possible, it will try the other one).
 
