@@ -33,4 +33,4 @@ Start the application with the following command line arguments: **[apiKey] [sec
 For example: **xyzapikeyxyz xyzsecretkeyxyz EUR BTC BTC 50 ETH 30 EUR 20**
 After you start the application, it will show the current and the current balances, the target distribution of your portfolio and their total in BTC. After you press a key, it will start the rebalancing. Before each order, it will test it if it can be executed and if so, ask you if you want to proceed with the given order. You have to choose y or n for every asset that passes the filters.
 
-P.S: I take no responsibility for any loss you may have using this application. 
+*P.S: I take no responsibility for any loss you may have using this application.*
