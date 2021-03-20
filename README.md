@@ -29,6 +29,6 @@ To use the application, you need 3 things:
  - The tracked assets (coins and fiats) that you want to rebalance with the tool and their desired distribution (in percentage).
  - The primary and secondary assets that the tool will use to buy and sell, ie. if your primary asset is EUR and your secondary asset is BTC, the tool will try to buy for BTC and sell for Euro (if those are not possible, it will try the other one).
 
-Start the application with the following command line arguments **[apiKey] [secretKey] [primary asset] [seconday asset] [asset1] [target1] [asset2] [target2]**.. or enter them after you started the application.
+Start the application with the following command line arguments: **[apiKey] [secretKey] [primary asset] [seconday asset] [asset1] [target1] [asset2] [target2]**.. or enter them after you started the application.
 For example: **xyzapikeyxyz xyzsecretkeyxyz EUR BTC BTC 50 ETH 30 EUR 20**
 After you start the application, it will show the current and the current balances, the target distribution of your portfolio and their total in BTC. After you press a key, it will start the rebalancing. Before each order, it will test it if it can be executed and if so, ask you if you want to proceed with the given order. You have to choose y or n for every asset that passes the filters.
