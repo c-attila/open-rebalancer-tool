@@ -297,7 +297,7 @@ namespace Rebalance_API
                 Environment.Exit(-1);
             }
 
-            for (int i = 2; i < args.Length; i += 2)
+            for (int i = 4; i < args.Length; i += 2)
             {
                 trackedAssets.Add(args[i].ToString());
                 targetDistribution.Add(args[i].ToString(), float.Parse(args[i + 1])/100);
