@@ -306,7 +306,19 @@ namespace Rebalance_API
             Console.WriteLine("Initial balances in Bitcoin: ");
             IDictionary<string, float> assetBalancesInBitcoin = new Dictionary<string, float>();
             foreach (string asset in trackedAssets)
-                assetBalancesInBitcoin.Add(asset, GetValueInBitcoin(asset));
+            {
+                Console.WriteLine("Enter additional amount for " + asset + " in BTC: ");
+                float additionalAmound = 0;
+                try
+                {
+                    additionalAmound = float.Parse(Console.ReadLine());
+                }
+                catch (System.FormatException)
+                {
+                    // ignore
+                }
+                assetBalancesInBitcoin.Add(asset, GetValueInBitcoin(asset) + additionalAmound);
+            }
             foreach (KeyValuePair<string, float> kvp in assetBalancesInBitcoin)
                 Console.WriteLine(kvp.Key + " : " + kvp.Value);
             Console.WriteLine();
